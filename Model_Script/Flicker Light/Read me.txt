@@ -1,0 +1,17 @@
+การทำงานจะเกิดขึ้นได้เมื่อ 
+
+// มี Part , PointLight หรือ วัตถุแสง ใน Model หรือ Part 
+
+วิธีการคือ
+1.สร้างรูปแบบตามนี้***
+Model(หรือชื่อที่ท่านสร้าง)<Part(หรือชื่อที่ท่านสร้าง)<PointLight
+
+2.สร้างสคริปใน Model และใน Part***
+Model<Script(ที่สร้าง)<Part<Script(ที่สร้าง)<PointLight
+
+3.เอาสคริป Flicker part วางไว้ใน Model ***
+Model<Script<<--เปิดและวางด้านใน <Part<Script<PointLight
+
+4.เอาสคริป Flicker light วางไว้ใน Model ***
+Model<Script<Part<Script<<--เปิดและวางด้านใน <PointLight
+
